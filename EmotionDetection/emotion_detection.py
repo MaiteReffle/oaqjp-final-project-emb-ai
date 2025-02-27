@@ -22,11 +22,11 @@ def emotion_detector(text_to_analyse):
 
     # Extract emotions
     emotions = formatted_response['emotionPredictions'][0]['emotion']
-    anger = emotions['anger'],
-    disgust = emotions['disgust'],
-    fear = emotions['fear'],
-    joy = emotions['joy'],
-    sadness = emotions['sadness'],
+    anger = emotions['anger']
+    disgust = emotions['disgust']
+    fear = emotions['fear']
+    joy = emotions['joy']
+    sadness = emotions['sadness']
 
     #Find dominant emotion
     dominant_emotion = max(emotions, key=emotions.get)
